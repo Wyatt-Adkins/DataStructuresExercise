@@ -1,11 +1,11 @@
 // 1a
 const jedi = [];
 // 1b
-jedi[0]="luke";
+jedi[0]="Luke";
 // 1c
 jedi.push("Obi-Wan Kenobi");
 // 1d
-console.log(jedi.unshift("yoda"));
+console.log(jedi.unshift("Yoda"));
 // 1e
 console.log(jedi[1]);
 // 1f 
@@ -23,7 +23,7 @@ const imperialOfficers = ["Grand Moff Tarkin", "Orson Krennic"];
 const starwarsVillans = sithlords.concat(imperialOfficers);
 console.log(starwarsVillans)
 // 2d
-starwarsVillans.splice(2, 4);
+starwarsVillans.splice(0, 2);
 console.log(starwarsVillans)
 // 
 // 3a
@@ -40,3 +40,29 @@ console.log (droids.b.Protocol);
 droids.c.Assassin = "IG-11"
 console.log (droids.c.Assassin)
 // node script.js
+
+// Bonus
+
+// 4
+console.log(starwarsVillans[0].slice(6,7))
+
+// 5
+console.log(sithlords.splice(-5,-1))
+
+// 6a
+const starwarsmovies = [
+{episodeone:"the phantom menace",
+episodetwo:"attack of the clones",
+episodethree:"revenge of the sith"},
+
+{episodefour:"a new hope",
+episodefive:"empire strikes back",
+episodesix:"return of the jedi"},
+
+{episodeseven:"the force awakens",
+episodeeight:"the last jedi",
+episodenine:"the rise of skywalker"}
+]
+// 6b
+starwarsmovies.splice(1,0,"solo","rouge one");
+console.log(starwarsmovies);
